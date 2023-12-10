@@ -1,3 +1,8 @@
 .idea/
 .pytest_cache/
+__pycache__/
 venv/
+.envrc
+.ruff_cache/
+.venv/
+.DS_Store

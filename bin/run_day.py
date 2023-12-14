@@ -50,10 +50,9 @@ with open(input_path) as f:
 start = time.time()
 part1 = solution_module.part1(input_text)
 end = time.time()
+print(f"Part 1: {part1} ({end - start:.3f}s)")
 
 start = time.time()
 part2 = solution_module.part2(input_text)
 end = time.time()
-
-print(f"Part 1: {part1} ({end - start:.3f}s)")
 print(f"Part 2: {part2} ({end - start:.3f}s)")

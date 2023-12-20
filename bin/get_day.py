@@ -77,11 +77,14 @@ with open(os.path.join(day_path, "solution.py"), "w") as f:
     f.write(
         f"""# {url}
 
+
 def part1(input_text: str) -> int:
     return 0
 
+
 def part2(input_text: str) -> int:
-    return 0"""
+    return 0
+"""
     )
 
 #
@@ -96,18 +99,18 @@ with open(os.path.join(tests_path, "test_solution.py"), "w") as f:
     f.write(
         f'''# {url}
 
-from aoc.y{year}.day{day}.solution import (
-    part1,
-    part2,
-)
+from aoc.y{year}.day{day}.solution import part1, part2
+
 
 def test_part1():
     input_text = """"""
 
     assert part1(input_text) == 0
 
+
 def test_part2():
     input_text = """"""
 
-    assert part2(input_text) == 0'''
+    assert part2(input_text) == 0
+'''
     )

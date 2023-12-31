@@ -96,7 +96,6 @@ def part1(input_text: str) -> int:
     for s in input_text.split(","):
         total += hash(s)
 
-    assert total == 516804
     return total
 
 
@@ -106,7 +105,4 @@ def part2(input_text: str) -> int:
         steps.append(Step.parse_step(s))
 
     boxes = perform_steps(steps)
-
-    focusing_power = calculate_focusing_power(boxes)
-    assert focusing_power == 231844
-    return focusing_power
+    return calculate_focusing_power(boxes)
